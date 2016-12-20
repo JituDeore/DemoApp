@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5C7573C1E0934B0001963DD /* EventHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7573B1E0934B0001963DD /* EventHelper.swift */; };
+		A5C757421E0938AE001963DD /* NHKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C7573F1E0938AE001963DD /* NHKeyboardAvoidingScrollView.m */; };
+		A5C757431E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C757411E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.m */; };
 		A5F7005D1E0929B000CCE3D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F7005C1E0929B000CCE3D3 /* AppDelegate.swift */; };
 		A5F7005F1E0929B000CCE3D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F7005E1E0929B000CCE3D3 /* ViewController.swift */; };
 		A5F700621E0929B000CCE3D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F700601E0929B000CCE3D3 /* Main.storyboard */; };
@@ -16,7 +17,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A5C7573B1E0934B0001963DD /* EventHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventHelper.swift; sourceTree = "<group>"; };
+		A5C7573D1E0938AD001963DD /* DemoAPP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoAPP-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5C7573E1E0938AE001963DD /* NHKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		A5C7573F1E0938AE001963DD /* NHKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		A5C757401E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+NHKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		A5C757411E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+NHKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		A5F700591E0929B000CCE3D3 /* DemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F7005C1E0929B000CCE3D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F7005E1E0929B000CCE3D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,11 +63,15 @@
 			children = (
 				A5F7005C1E0929B000CCE3D3 /* AppDelegate.swift */,
 				A5F7005E1E0929B000CCE3D3 /* ViewController.swift */,
-				A5C7573B1E0934B0001963DD /* EventHelper.swift */,
+				A5C7573E1E0938AE001963DD /* NHKeyboardAvoidingScrollView.h */,
+				A5C7573F1E0938AE001963DD /* NHKeyboardAvoidingScrollView.m */,
+				A5C757401E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.h */,
+				A5C757411E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.m */,
 				A5F700601E0929B000CCE3D3 /* Main.storyboard */,
 				A5F700631E0929B000CCE3D3 /* Assets.xcassets */,
 				A5F700651E0929B000CCE3D3 /* LaunchScreen.storyboard */,
 				A5F700681E0929B000CCE3D3 /* Info.plist */,
+				A5C7573D1E0938AD001963DD /* DemoAPP-Bridging-Header.h */,
 			);
 			path = DemoAPP;
 			sourceTree = "<group>";
@@ -138,9 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C7573C1E0934B0001963DD /* EventHelper.swift in Sources */,
 				A5F7005F1E0929B000CCE3D3 /* ViewController.swift in Sources */,
+				A5C757431E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.m in Sources */,
 				A5F7005D1E0929B000CCE3D3 /* AppDelegate.swift in Sources */,
+				A5C757421E0938AE001963DD /* NHKeyboardAvoidingScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,10 +265,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DemoAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DemoAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoAPP/DemoAPP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -266,10 +279,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DemoAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DemoAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoAPP/DemoAPP-Bridging-Header.h";
 			};
 			name = Release;
 		};
