@@ -10,6 +10,7 @@
 		A5C757421E0938AE001963DD /* NHKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C7573F1E0938AE001963DD /* NHKeyboardAvoidingScrollView.m */; };
 		A5C757431E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C757411E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.m */; };
 		A5C757451E093FED001963DD /* ContentFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C757441E093FED001963DD /* ContentFilter.swift */; };
+		A5C757481E0A5CF4001963DD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C757471E0A5CF4001963DD /* Reachability.m */; };
 		A5F7005D1E0929B000CCE3D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F7005C1E0929B000CCE3D3 /* AppDelegate.swift */; };
 		A5F7005F1E0929B000CCE3D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F7005E1E0929B000CCE3D3 /* ViewController.swift */; };
 		A5F700621E0929B000CCE3D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F700601E0929B000CCE3D3 /* Main.storyboard */; };
@@ -24,6 +25,8 @@
 		A5C757401E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+NHKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		A5C757411E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+NHKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		A5C757441E093FED001963DD /* ContentFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentFilter.swift; sourceTree = "<group>"; };
+		A5C757461E0A5CF4001963DD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A5C757471E0A5CF4001963DD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		A5F700591E0929B000CCE3D3 /* DemoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F7005C1E0929B000CCE3D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F7005E1E0929B000CCE3D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 				A5C7573F1E0938AE001963DD /* NHKeyboardAvoidingScrollView.m */,
 				A5C757401E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.h */,
 				A5C757411E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.m */,
+				A5C757461E0A5CF4001963DD /* Reachability.h */,
+				A5C757471E0A5CF4001963DD /* Reachability.m */,
 				A5F700601E0929B000CCE3D3 /* Main.storyboard */,
 				A5F700631E0929B000CCE3D3 /* Assets.xcassets */,
 				A5F700651E0929B000CCE3D3 /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 				A5C757451E093FED001963DD /* ContentFilter.swift in Sources */,
 				A5C757431E0938AE001963DD /* UIScrollView+NHKeyboardAvoidingAdditions.m in Sources */,
 				A5F7005D1E0929B000CCE3D3 /* AppDelegate.swift in Sources */,
+				A5C757481E0A5CF4001963DD /* Reachability.m in Sources */,
 				A5C757421E0938AE001963DD /* NHKeyboardAvoidingScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
