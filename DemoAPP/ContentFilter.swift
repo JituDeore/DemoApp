@@ -8,6 +8,9 @@
 
 import UIKit
 
+//Demo commit.
+
+
 @objc class ContentFilter: NSObject {
     
     var finalString: String?
